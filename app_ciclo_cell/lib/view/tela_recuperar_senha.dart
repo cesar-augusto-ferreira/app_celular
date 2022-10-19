@@ -12,7 +12,25 @@ class TelaRecuperarSenha extends StatefulWidget {
 class _TelaRecuperarSenhaState extends State<TelaRecuperarSenha> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(68, 56, 71, 1),
 
+       drawer: Drawer(
+        width: 200,
+      ),
+
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: const Text(
+          'CicloCell',
+          style: TextStyle(
+            fontSize: 35,
+            color: Color.fromARGB(255, 15, 234, 22),
+          ),
+          ),
+      ),
+
+    );
+      
   }
 }
