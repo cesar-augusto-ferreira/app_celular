@@ -13,7 +13,7 @@ class _TelaRecuperarSenhaState extends State<TelaRecuperarSenha> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(68, 56, 71, 1),
+      backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
 
        drawer: Drawer(
         width: 200,
