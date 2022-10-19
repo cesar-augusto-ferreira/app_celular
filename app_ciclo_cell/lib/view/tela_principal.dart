@@ -36,6 +36,16 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   width: 80,
                   fit: BoxFit.fill,
                 ),
+                Image.asset(
+                  'lib/images/reciclagem.png',
+                  width: 80,
+                  fit: BoxFit.fill,
+                ),
+                Image.asset(
+                  'lib/images/camera.png',
+                  width: 80,
+                  fit: BoxFit.fill,
+                ),
               ],
 
             ),
