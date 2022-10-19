@@ -15,6 +15,11 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      drawer: Drawer(
+        width: 200,
+      ),
+
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -24,8 +29,8 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
             color: Color.fromARGB(255, 15, 234, 22),
           ),
           ),
-
       ),
+
       backgroundColor: Color.fromRGBO(68, 56, 71, 1),
       body: SingleChildScrollView(
         child: Padding(
@@ -113,11 +118,11 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'lib/images/botao_de_upload.png',
+                      'lib/images/nuvem.png',
                       width: 85,
                       fit: BoxFit.fill,
                     ),
-                    const SizedBox(width: 20),
+                    const SizedBox(width: 22),
                     Text(
                       'Backup \n da arquivos',
                       style: TextStyle(
