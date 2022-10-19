@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+
+
 import 'package:app_ciclo_cell/view/tela_recuperar_senha.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,13 +16,13 @@ class _TelaLoginState extends State<TelaLogin> {
   var email = TextEditingController();
   var senha = TextEditingController();
   @override
-  Widget build(BuildContext context) {return Scaffold(
-
+  Widget build(BuildContext context) {
+    return Scaffold(
       backgroundColor:const Color.fromRGBO(68, 56, 71, 1),
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
           child: Center(
             child: Column(
               children: [
@@ -27,25 +30,31 @@ class _TelaLoginState extends State<TelaLogin> {
                   'lib/images/Logo_CicloCell.png',
                   height: 180,
                 ),
-                const SizedBox(height: 45,),
-                const CampoTexto(label: 'Email', hintLabel: 'Digite seu ',iconepref: Icons.person_outline,),
-                const SizedBox(height: 35),
+                const SizedBox(height: 60,),
+                const CampoTexto(label: 'Email', hintLabel: 'Digite seu ',
+                  iconepref: Icons.person_outline,
+                ),
+                const SizedBox(height: 45),
                 const CampoTexto(label: 'Senha', hintLabel: 'Digite sua ',
-                 iconepref: Icons.vpn_key, iconesuf: Icons.visibility_off_outlined,),
-                 const SizedBox(height: 25),
-                 Text(
-                  'Recuperar senha',
-                  style: TextStyle(
-                    color: Colors.red,
-                    fontSize: 25,
+                  iconepref: Icons.vpn_key, iconesuf: Icons.visibility_off_outlined,
+                ),
+                const SizedBox(height: 40),
+                TextButton(
+                  onPressed:(){},
+                  child: Text(
+                    'Recuperar senha',
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 25,
+                      decoration: TextDecoration.underline,
+                    ),
+                    ), 
                   ),
-                  textAlign: TextAlign.start,
-                  ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 80),
                   Row(
                     children: [
                       const SizedBox(width: 25),
-                      Botao(corBotao: Colors.grey.shade200, nomeBotao: 'Login'),
+                      Botao(corBotao: Colors.grey.shade200, nomeBotao: 'Login',),
                       const SizedBox(width: 50),
                       Botao(corBotao: Colors.grey.shade200, nomeBotao:'Cadastrar'),
                     ],
@@ -71,26 +80,26 @@ class CampoTexto extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      
       decoration: InputDecoration(
         floatingLabelAlignment: FloatingLabelAlignment.center,
         labelText: label,
         hintText: '$hintLabel $label',
+        hintStyle: TextStyle(
+          color: Colors.white,
+        ),
         prefixIcon: iconepref == null ? null : Icon(
-          iconepref, color: Colors.black,
+          iconepref, color: Colors.white,
         ),
         suffixIcon: iconesuf == null ? null : Icon(
-          iconesuf , color: Colors.black,
+          iconesuf , color: Colors.white,
         ),
-        fillColor: Colors.grey.shade200,
-        filled: true,
         labelStyle: GoogleFonts.roboto(
           fontSize: 25,
-          color: Colors.black,
+          color: Colors.white,
         ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
-        ),
+        fillColor: Colors.white,
       ),
     );
     

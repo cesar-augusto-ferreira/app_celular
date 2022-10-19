@@ -51,6 +51,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                         ),
                   ],
                 ),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -69,7 +70,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -78,7 +79,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                       width: 60,
                       fit: BoxFit.fill,
                     ),
-                    const SizedBox(width: 16),
+                    const SizedBox(width: 20),
                     Text(
                       'Avaliar \n aparelho',
                       style: TextStyle(
@@ -88,7 +89,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -105,6 +106,44 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                             color: Colors.white,
                           ),
                         ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/botao_de_upload.png',
+                      width: 85,
+                      fit: BoxFit.fill,
+                    ),
+                    const SizedBox(width: 20),
+                    Text(
+                      'Backup \n da arquivos',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/bate-papo.png',
+                      width: 85,
+                      fit: BoxFit.fill,
+                    ),
+                    const SizedBox(width: 20),
+                    Text(
+                      'Central \n de ajuda',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
                   ],
                 ),
               ],
