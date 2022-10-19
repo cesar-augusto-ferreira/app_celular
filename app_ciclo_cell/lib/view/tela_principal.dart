@@ -1,5 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:convert';
+
+import 'package:app_ciclo_cell/view/tela_login.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,8 +20,26 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
 
+      
       drawer: Drawer(
-        width: 200,
+        backgroundColor: Color.fromRGBO(68, 56, 71, 30),
+        child: ListView(
+          padding: EdgeInsets.symmetric(horizontal:0, vertical: 0),
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.black, shape: BoxShape.circle, image: DecorationImage(image: image) ),
+              child: Text(
+                'olá Rodrigo',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.white,
+                ),
+              ),
+              
+            ),
+          ],
+        ),
       ),
 
       appBar: AppBar(
@@ -34,7 +56,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       backgroundColor: Color.fromRGBO(68, 56, 71, 1),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
           child: Center(
             child: Column(
               children: [
@@ -56,7 +78,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                         ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -75,7 +97,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -94,7 +116,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -113,7 +135,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                         ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -132,7 +154,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

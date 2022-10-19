@@ -12,7 +12,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaRecuperarSenha(),
+      home: TelaPrincipal(),
       debugShowCheckedModeBanner: false,
     ),
     );
