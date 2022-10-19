@@ -1,16 +1,18 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({Key? key}) : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class TelaRecuperarSenha extends StatefulWidget {
+  const TelaRecuperarSenha({Key? key}) : super(key: key);
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<TelaRecuperarSenha> createState() => _TelaRecuperarSenhaState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _TelaRecuperarSenhaState extends State<TelaRecuperarSenha> {
   @override
   Widget build(BuildContext context) {
-    
+    return Scaffold();
+
   }
 }
