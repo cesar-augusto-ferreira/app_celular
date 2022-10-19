@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -32,31 +34,78 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'lib/images/reciclagem.png',
+                      'lib/images/forca.png',
                       width: 80,
                       fit: BoxFit.fill,
                     ),
+                    const SizedBox(width: 16),
                     Text(
-                      'Tempo da bateria',
-                      style: TextStyle(
-                        fontSize: 25,
-                      ),
-                      ),
+                          'Aumentar \n performace',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                          ),
+                        ),
                   ],
                 ),
-                const SizedBox(height: 35),
-                Image.asset(
-                  'lib/images/dolar.png',
-                  width: 80,
-                  fit: BoxFit.fill,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/reciclagem.png',
+                      width: 60,
+                      fit: BoxFit.fill,
+                    ),
+                    const SizedBox(width: 20),
+                    Text(
+                      'Tempo \n da bateria',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
-                  const SizedBox(height: 35),
-                Image.asset(
-                  'lib/images/camera.png',
-                  width: 80,
-                  fit: BoxFit.fill,
+                const SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/dolar.png',
+                      width: 60,
+                      fit: BoxFit.fill,
+                    ),
+                    const SizedBox(width: 16),
+                    Text(
+                      'Avaliar \n aparelho',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+                  const SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/camera.png',
+                      width: 80,
+                      fit: BoxFit.fill,
+                    ),
+                    const SizedBox(width: 16),
+                    Text(
+                          'Anunciar \n aparelho',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                          ),
+                        ),
+                  ],
                 ),
               ],
 

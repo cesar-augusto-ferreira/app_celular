@@ -10,6 +10,8 @@ class TelaLogin extends StatefulWidget {
 }
 
 class _TelaLoginState extends State<TelaLogin> {
+  var email = TextEditingController();
+  var senha = TextEditingController();
   @override
   Widget build(BuildContext context) {return Scaffold(
 
@@ -26,7 +28,7 @@ class _TelaLoginState extends State<TelaLogin> {
                   height: 180,
                 ),
                 const SizedBox(height: 45,),
-                const CampoTexto(label: 'CPF', hintLabel: 'Digite seu ',iconepref: Icons.person_outline,),
+                const CampoTexto(label: 'Email', hintLabel: 'Digite seu ',iconepref: Icons.person_outline,),
                 const SizedBox(height: 35),
                 const CampoTexto(label: 'Senha', hintLabel: 'Digite sua ',
                  iconepref: Icons.vpn_key, iconesuf: Icons.visibility_off_outlined,),
