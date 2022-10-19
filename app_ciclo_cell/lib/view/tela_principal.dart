@@ -31,16 +31,29 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           child: Center(
             child: Column(
               children: [
+                Row(
+                  children: [
+                    Image.asset(
+                      'lib/images/reciclagem.png',
+                      width: 80,
+                      fit: BoxFit.fill,
+                    ),
+                    Text(
+                      'Tempo da bateria',
+                      style: TextStyle(
+                        fontSize: 25,
+                      ),
+                      ),
+                    
+                  ],
+                ),
+                const SizedBox(height: 35),
                 Image.asset(
                   'lib/images/dolar.png',
                   width: 80,
                   fit: BoxFit.fill,
                 ),
-                Image.asset(
-                  'lib/images/reciclagem.png',
-                  width: 80,
-                  fit: BoxFit.fill,
-                ),
+                  const SizedBox(height: 35),
                 Image.asset(
                   'lib/images/camera.png',
                   width: 80,
