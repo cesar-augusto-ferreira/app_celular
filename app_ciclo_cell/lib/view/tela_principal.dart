@@ -44,7 +44,6 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                         fontSize: 25,
                       ),
                       ),
-                    
                   ],
                 ),
                 const SizedBox(height: 35),
