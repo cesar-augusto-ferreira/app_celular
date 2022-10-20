@@ -56,19 +56,30 @@ class _TelaBateriaState extends State<TelaBateria> {
           ),
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 100),
+        child: Center(
+          child: Column(
+            children: [
+              Texto(label: 'Tempo de bateria!', tamFonte: 20),
+              const SizedBox(height: 20),
+              Texto(
+                label: ' Que tal saber quanto tempo de vida útil ainda' 
+                  ' tem a bateria do seu aparelho.', tamFonte: 20
+              ),
+              const SizedBox(height: 30),
+              Image.asset(
+                'lib/images/reciclagem.png',
+                height: 150,
+              ),                
+            ],
+          ),
+        ),
+      ),
     );
     
   }
 }
-
-
-
-
-
-
-
-
-
 
 class Texto extends StatelessWidget {
   final String label;
@@ -87,5 +98,4 @@ class Texto extends StatelessWidget {
       ),
     );   
   }
-
 }
