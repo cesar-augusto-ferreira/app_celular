@@ -20,23 +20,42 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      
-      drawer: Drawer(
-        backgroundColor: Color.fromRGBO(68, 56, 71, 30),
-        child: ListView(
-          padding: EdgeInsets.symmetric(horizontal:0, vertical: 0),
+      endDrawer: Drawer(
+        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
+        width: 250,
+        child: Column(
           children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.black, shape: BoxShape.circle, image: DecorationImage(image: image) ),
-              child: Text(
-                'olá Rodrigo',
-                textAlign: TextAlign.center,
+            UserAccountsDrawerHeader(
+              accountName: Text('Sergio'), 
+              accountEmail: Text('sergio@hotmail.com'),
+              currentAccountPicture: Image.asset('lib/images/homem.png'),
+            ),
+            
+            const SizedBox(height: 10,),
+            Texto(label: 'Aumentar a performace', tamFonte: 18),
+            const SizedBox(height: 0.5,),
+            ListTile(
+              title: Texto(label: 'Tempo da bateria', tamFonte: 18),
+            ),
+            const SizedBox(height: 10,),
+            ListTile(
+              title: Text(
+                'Avaliar o aparelho',
                 style: TextStyle(
-                  fontSize: 25,
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10,),
+            ListTile(
+              title: Text(
+                'Anunciar o aparelho',
+                style: TextStyle(
+                  fontSize: 18,
                   color: Colors.white,
                 ),
               ),
-              
             ),
           ],
         ),
@@ -70,11 +89,11 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                     const SizedBox(width: 16),
                     Text(
-                          'Aumentar \n performace',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                          ),
+                      'Aumentar \n performace',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                         ),
                   ],
                 ),
@@ -183,4 +202,24 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
     );
     
   }
+}
+
+class Texto extends StatelessWidget {
+  final String label;
+  final dynamic tamFonte;
+
+  const Texto({Key? key, required this.label, required this.tamFonte}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      label,
+      textAlign: TextAlign.start,
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: tamFonte,
+      ),
+    );   
+  }
+
 }
