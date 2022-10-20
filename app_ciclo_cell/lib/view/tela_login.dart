@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 
+import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:app_ciclo_cell/view/tela_recuperar_senha.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +58,7 @@ class _TelaLoginState extends State<TelaLogin> {
                       const SizedBox(width: 25),
                       Botao(corBotao: Colors.grey.shade200, nomeBotao: 'Login',acaoBotao: TelaPrincipal(),),
                       const SizedBox(width: 50),
-                      Botao(corBotao: Colors.grey.shade200, nomeBotao:'Cadastrar'),
+                      Botao(corBotao: Colors.grey.shade200, nomeBotao:'Cadastrar',acaoBotao: TelaCadastro(),),
                     ],
                   ),
               ],

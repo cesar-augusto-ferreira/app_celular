@@ -30,33 +30,24 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               accountEmail: Text('sergio@hotmail.com'),
               currentAccountPicture: Image.asset('lib/images/homem.png'),
             ),
-            
             const SizedBox(height: 10,),
             Texto(label: 'Aumentar a performace', tamFonte: 18),
-            const SizedBox(height: 0.5,),
-            ListTile(
-              title: Texto(label: 'Tempo da bateria', tamFonte: 18),
-            ),
             const SizedBox(height: 10,),
-            ListTile(
-              title: Text(
-                'Avaliar o aparelho',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
-            ),
+            Texto(label: 'Tempo da bateria', tamFonte: 18),
             const SizedBox(height: 10,),
-            ListTile(
-              title: Text(
-                'Anunciar o aparelho',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            Texto(label: 'Avaliar o aparelho', tamFonte: 18),
+            const SizedBox(height: 10,),
+            Texto(label: 'Backup de arquivos', tamFonte: 18),
+            const SizedBox(height: 10,),
+            Texto(label: 'Central de ajuda', tamFonte: 18),
+            const SizedBox(height: 40,),
+            Texto(label: 'Quem somos', tamFonte: 18),
+            const SizedBox(height: 10,),
+            Texto(label: 'Minha conta', tamFonte: 18),
+            const SizedBox(height: 10,),
+            Texto(label: 'Compra segura', tamFonte: 18),
+            const SizedBox(height: 10,),
+            Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
@@ -165,7 +156,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                     const SizedBox(width: 22),
                     Text(
-                      'Backup \n da arquivos',
+                      'Backup \n de arquivos',
                       style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,
