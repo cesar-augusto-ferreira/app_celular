@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2022/10/20-07:52:33.389 1dc Creating DB C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2684bddf\flutter_tools_chrome_device.cc85a2c3\Default\Session Storage since it was missing.
 2022/10/20-07:52:33.408 1dc Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2684bddf\flutter_tools_chrome_device.cc85a2c3\Default\Session Storage/MANIFEST-000001
 =======
@@ -18,3 +19,8 @@
 >>>>>>> 28df9b44dc36e6903dd1dc246acac53fe5e23bc0
 >>>>>>> d5322dd9d50b54b4b0978bca2a9309387e83ecf9
 >>>>>>> segundo
+=======
+2022/10/20-10:35:34.718 1254 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.2e9be740\flutter_tools_chrome_device.88a8fda1\Default\Session Storage/MANIFEST-000001
+2022/10/20-10:35:34.721 1254 Recovering log #3
+2022/10/20-10:35:34.726 1254 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.2e9be740\flutter_tools_chrome_device.88a8fda1\Default\Session Storage/000003.log 
+>>>>>>> parent of eacf1b9 (4 telas)

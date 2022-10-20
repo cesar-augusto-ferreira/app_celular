@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"net":{"http_server_properties":{"servers":[{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313271431880907","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":27147},"server":"https://optimizationguide-pa.googleapis.com","supports_spdy":true},{"isolation":[],"server":"https://unpkg.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313329727621409","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":36958},"server":"https://fonts.gstatic.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313329715699575","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":20062},"server":"https://accounts.google.com","supports_spdy":true}],"supports_quic":{"address":"2804:14d:5887:9b7c:759c:55c9:6d52:404d","used_quic":true},"version":5},"network_qualities":{"CAASABiAgICA+P////8B":"4G"}}}
 =======
 <<<<<<< HEAD
@@ -11,3 +12,6 @@
 >>>>>>> 28df9b44dc36e6903dd1dc246acac53fe5e23bc0
 >>>>>>> d5322dd9d50b54b4b0978bca2a9309387e83ecf9
 >>>>>>> segundo
+=======
+{"net":{"http_server_properties":{"servers":[{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313271431880907","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":27147},"server":"https://optimizationguide-pa.googleapis.com","supports_spdy":true},{"isolation":[],"server":"https://unpkg.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313346754990986","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":43482},"server":"https://accounts.google.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13313346761333466","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":20791},"server":"https://fonts.gstatic.com","supports_spdy":true}],"supports_quic":{"address":"2804:431:cfed:7e6d:d156:37f5:3e4a:ed86","used_quic":true},"version":5},"network_qualities":{"CAASABiAgICA+P////8B":"4G"}}}
+>>>>>>> parent of eacf1b9 (4 telas)

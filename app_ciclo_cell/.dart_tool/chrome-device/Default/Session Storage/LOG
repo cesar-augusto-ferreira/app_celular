@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2022/10/20-08:08:34.789 30d4 Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.9532a217\flutter_tools_chrome_device.974236b0\Default\Session Storage/MANIFEST-000001
 2022/10/20-08:08:34.796 30d4 Recovering log #3
 2022/10/20-08:08:34.798 30d4 Reusing old log C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.9532a217\flutter_tools_chrome_device.974236b0\Default\Session Storage/000003.log 
@@ -19,3 +20,8 @@
 >>>>>>> 28df9b44dc36e6903dd1dc246acac53fe5e23bc0
 >>>>>>> d5322dd9d50b54b4b0978bca2a9309387e83ecf9
 >>>>>>> segundo
+=======
+2022/10/20-12:52:34.695 4100 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Session Storage/MANIFEST-000001
+2022/10/20-12:52:34.696 4100 Recovering log #3
+2022/10/20-12:52:34.698 4100 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Session Storage/000003.log 
+>>>>>>> parent of eacf1b9 (4 telas)
