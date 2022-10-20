@@ -101,7 +101,6 @@ class CampoTexto extends StatelessWidget {
           fontSize: 25,
           color: Colors.white,
         ),
-        fillColor: Colors.white,
       ),
     );
     
