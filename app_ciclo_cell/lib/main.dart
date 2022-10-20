@@ -3,6 +3,7 @@
 
 
 import 'package:app_ciclo_cell/view/tela_anunciar.dart';
+import 'package:app_ciclo_cell/view/tela_bateria.dart';
 import 'package:app_ciclo_cell/view/tela_login.dart';
 import 'package:app_ciclo_cell/view/tela_performace.dart';
 import 'package:app_ciclo_cell/view/tela_principal.dart';
@@ -14,7 +15,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaPrincipal(),
+      home: TelaBateria(),
       debugShowCheckedModeBanner: false,
     ),
     );
