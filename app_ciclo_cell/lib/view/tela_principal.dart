@@ -1,5 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:convert';
+
+import 'package:app_ciclo_cell/view/tela_login.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,8 +20,45 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      drawer: Drawer(
-        width: 200,
+      endDrawer: Drawer(
+        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
+        width: 250,
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text('Sergio'), 
+              accountEmail: Text('sergio@hotmail.com'),
+              currentAccountPicture: Image.asset('lib/images/homem.png'),
+            ),
+            
+            const SizedBox(height: 10,),
+            Texto(label: 'Aumentar a performace', tamFonte: 18),
+            const SizedBox(height: 0.5,),
+            ListTile(
+              title: Texto(label: 'Tempo da bateria', tamFonte: 18),
+            ),
+            const SizedBox(height: 10,),
+            ListTile(
+              title: Text(
+                'Avaliar o aparelho',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10,),
+            ListTile(
+              title: Text(
+                'Anunciar o aparelho',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
 
       appBar: AppBar(
@@ -34,7 +75,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       backgroundColor: Color.fromRGBO(68, 56, 71, 1),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
           child: Center(
             child: Column(
               children: [
@@ -48,15 +89,15 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                     const SizedBox(width: 16),
                     Text(
-                          'Aumentar \n performace',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                          ),
+                      'Aumentar \n performace',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                         ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -75,7 +116,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -94,7 +135,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -113,7 +154,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                         ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -132,7 +173,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -161,4 +202,24 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
     );
     
   }
+}
+
+class Texto extends StatelessWidget {
+  final String label;
+  final dynamic tamFonte;
+
+  const Texto({Key? key, required this.label, required this.tamFonte}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      label,
+      textAlign: TextAlign.start,
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: tamFonte,
+      ),
+    );   
+  }
+
 }
