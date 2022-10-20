@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TelaCadastro extends StatefulWidget {
   const TelaCadastro({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class _TelaCadastroState extends State<TelaCadastro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
        endDrawer: Drawer(
         backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
@@ -56,6 +58,21 @@ class _TelaCadastroState extends State<TelaCadastro> {
           ),
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+
+    
+      body: const SingleChildScrollView(
+        child: Padding(
+          padding:EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Center(
+            child: Column(
+              children: [
+                Texto(label: 'Cadastro', tamFonte: 25),
+              ],
+            ),
+          ),
+        ),
+      ),
+
     );
     
   }
@@ -64,7 +81,41 @@ class _TelaCadastroState extends State<TelaCadastro> {
 
 
 
+class CampoTextoC extends StatelessWidget {
+  final String label;
+  final String? hintLabel;
+  final IconData? iconepref;
+  final IconData? iconesuf;
 
+  const CampoTextoC({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      
+      decoration: InputDecoration(
+        floatingLabelAlignment: FloatingLabelAlignment.center,
+        labelText: label,
+        hintText: '$hintLabel $label',
+        hintStyle: TextStyle(
+          color: Colors.white,
+        ),
+        prefixIcon: iconepref == null ? null : Icon(
+          iconepref, color: Colors.white,
+        ),
+        suffixIcon: iconesuf == null ? null : Icon(
+          iconesuf , color: Colors.white,
+        ),
+        labelStyle: GoogleFonts.roboto(
+          fontSize: 25,
+          color: Colors.white,
+        ),
+        fillColor: Colors.white,
+      ),
+    );
+    
+  }
+}
 
 
 
