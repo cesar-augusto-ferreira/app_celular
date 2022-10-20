@@ -1,19 +1,17 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class TelaBateria extends StatefulWidget {
-  const TelaBateria({Key? key}) : super(key: key);
+class TelaPerformace3 extends StatefulWidget {
+  const TelaPerformace3({Key? key}) : super(key: key);
 
   @override
-  State<TelaBateria> createState() => _TelaBateriaState();
+  State<TelaPerformace3> createState() => _TelaPerformace3State();
 }
 
-class _TelaBateriaState extends State<TelaBateria> {
+class _TelaPerformace3State extends State<TelaPerformace3> {
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
+    return Scaffold(
        endDrawer: Drawer(
         backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
@@ -62,21 +60,16 @@ class _TelaBateriaState extends State<TelaBateria> {
         child: Center(
           child: Column(
             children: [
-              Texto(label: 'Tempo de bateria!', tamFonte: 20),
+              Texto(label: '+ Performance! ', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: ' Que tal saber quanto tempo de vida útil ainda' 
-                  ' tem a bateria do seu aparelho.', tamFonte: 20
+                label: ' Seu Smartphone esta 29% mais forte! \n', tamFonte: 20,
               ),
               const SizedBox(height: 30),
               Image.asset(
-                'lib/images/reciclagem.png',
+                'lib/images/forca.png',
                 height: 150,                
-              ),
-              SizedBox(height:20),
-              Botao(corBotao: Colors.white, nomeBotao: 'Iniciar teste'),
-
-
+              ),                                                  
             ],
           ),
         ),
@@ -104,3 +97,7 @@ class Texto extends StatelessWidget {
     );   
   }
 }
+     
+  
+ 
+ 

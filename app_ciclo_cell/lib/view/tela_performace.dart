@@ -1,3 +1,4 @@
+import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
 
 class TelaPerformace extends StatefulWidget {
@@ -54,19 +55,34 @@ class _TelaPerformaceState extends State<TelaPerformace> {
           ),
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 70),
+        child: Center(
+          child: Column(
+            children: [
+              Texto(label: 'Mais performance! ', tamFonte: 20),
+              const SizedBox(height: 20),
+              Texto(
+                label: ' Essa função elimina os cokies, fecha os aplicativos em segundo plano'
+                'e sugere a remoção de aplicativos antigos que não estão sendo utilizados', tamFonte: 20
+              ),
+              const SizedBox(height: 30),
+              Image.asset(
+                'lib/images/forca.png',
+                height: 150,                
+              ),
+              SizedBox(height:20),
+              Botao(corBotao: Colors.white, nomeBotao: '+ Performance'),
+
+
+            ],
+          ),
+        ),
+      ),
     );
     
   }
 }
-
-
-
-
-
-
-
-
-
 
 class Texto extends StatelessWidget {
   final String label;

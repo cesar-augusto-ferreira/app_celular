@@ -1,19 +1,18 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class TelaBateria extends StatefulWidget {
-  const TelaBateria({Key? key}) : super(key: key);
+class TelaNuvem extends StatefulWidget {
+  const TelaNuvem({Key? key}) : super(key: key);
 
   @override
-  State<TelaBateria> createState() => _TelaBateriaState();
+  State<TelaNuvem> createState() => _TelaNuvemState();
 }
 
-class _TelaBateriaState extends State<TelaBateria> {
+class _TelaNuvemState extends State<TelaNuvem> {
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
+    return Scaffold(
        endDrawer: Drawer(
         backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
@@ -62,21 +61,29 @@ class _TelaBateriaState extends State<TelaBateria> {
         child: Center(
           child: Column(
             children: [
-              Texto(label: 'Tempo de bateria!', tamFonte: 20),
+              Texto(label: 'Salvar com segurança! ', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: ' Que tal saber quanto tempo de vida útil ainda' 
-                  ' tem a bateria do seu aparelho.', tamFonte: 20
+                label: ' Digite seu e-mail abaixo: \n',
+                      tamFonte: 20,
               ),
-              const SizedBox(height: 30),
+              CampoTexto(label: 'E-mail nuvem',hintLabel: 'Digite seu'),
+              const SizedBox(height: 25),
               Image.asset(
-                'lib/images/reciclagem.png',
+                'lib/images/nuvem.png',
                 height: 150,                
               ),
-              SizedBox(height:20),
-              Botao(corBotao: Colors.white, nomeBotao: 'Iniciar teste'),
-
-
+              
+             
+              Row(
+                children: [
+                  SizedBox(height:20),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Comprar nuvem'),
+                  SizedBox(width:20),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Salvar'),
+                ],
+              ),
+                         
             ],
           ),
         ),
@@ -104,3 +111,48 @@ class Texto extends StatelessWidget {
     );   
   }
 }
+
+  class CampoTexto extends StatelessWidget {
+  final String label;
+  final String? hintLabel;
+  final IconData? iconepref;
+  final IconData? iconesuf;
+
+  const CampoTexto({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      
+      decoration: InputDecoration(
+        floatingLabelAlignment: FloatingLabelAlignment.center,
+        labelText: label,
+        hintText: '$hintLabel $label',
+        hintStyle: TextStyle(
+          color: Colors.black,
+        ),
+        prefixIcon: iconepref == null ? null : Icon(
+          iconepref, color: Colors.white,
+        ),
+        suffixIcon: iconesuf == null ? null : Icon(
+          iconesuf , color: Colors.white,
+        ),
+        fillColor: Colors.white,
+        filled: true,
+        labelStyle: GoogleFonts.roboto(
+          fontSize: 25,
+          color: Colors.black,
+
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(1),
+        ),
+      ),
+    );
+    
+  }
+}
+     
+  
+ 
+ 

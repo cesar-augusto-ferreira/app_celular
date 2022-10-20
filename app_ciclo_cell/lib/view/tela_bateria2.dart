@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class TelaBateria extends StatefulWidget {
-  const TelaBateria({Key? key}) : super(key: key);
+class TelaBateria2 extends StatefulWidget {
+  const TelaBateria2({Key? key}) : super(key: key);
 
   @override
-  State<TelaBateria> createState() => _TelaBateriaState();
+  State<TelaBateria2> createState() => _TelaBateria2State();
 }
 
-class _TelaBateriaState extends State<TelaBateria> {
+class _TelaBateria2State extends State<TelaBateria2> {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
@@ -62,21 +62,17 @@ class _TelaBateriaState extends State<TelaBateria> {
         child: Center(
           child: Column(
             children: [
-              Texto(label: 'Tempo de bateria!', tamFonte: 20),
+              Texto(label: 'Sua bateria esta boa!', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: ' Que tal saber quanto tempo de vida útil ainda' 
-                  ' tem a bateria do seu aparelho.', tamFonte: 20
+                label: ' Tem 70% de vida útil.', tamFonte: 30
               ),
               const SizedBox(height: 30),
               Image.asset(
                 'lib/images/reciclagem.png',
                 height: 150,                
               ),
-              SizedBox(height:20),
-              Botao(corBotao: Colors.white, nomeBotao: 'Iniciar teste'),
-
-
+              
             ],
           ),
         ),
