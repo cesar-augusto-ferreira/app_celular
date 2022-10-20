@@ -1,46 +1,44 @@
-
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class TelaRecuperarSenha extends StatefulWidget {
-  const TelaRecuperarSenha({Key? key}) : super(key: key);
+class TelaAnumcio extends StatefulWidget {
+  const TelaAnumcio({Key? key}) : super(key: key);
 
   @override
-  State<TelaRecuperarSenha> createState() => _TelaRecuperarSenhaState();
+  State<TelaAnumcio> createState() => _TelaAnumcioState();
 }
 
-class _TelaRecuperarSenhaState extends State<TelaRecuperarSenha> {
+class _TelaAnumcioState extends State<TelaAnumcio> {
   @override
   Widget build(BuildContext context) {
      return Scaffold(
        endDrawer: Drawer(
-        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
+        backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
         width: 250,
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Sergio'), 
-              accountEmail: Text('sergio@hotmail.com'),
+              accountName: const Text('Sergio'), 
+              accountEmail: const Text('sergio@hotmail.com'),
               currentAccountPicture: Image.asset('lib/images/homem.png'),
             ),
             const SizedBox(height: 10,),
-            Texto(label: 'Aumentar a performace', tamFonte: 18),
+            const Texto(label: 'Aumentar a performace', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Tempo da bateria', tamFonte: 18),
+            const Texto(label: 'Tempo da bateria', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Avaliar o aparelho', tamFonte: 18),
+            const Texto(label: 'Avaliar o aparelho', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Backup de arquivos', tamFonte: 18),
+            const Texto(label: 'Backup de arquivos', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Central de ajuda', tamFonte: 18),
+            const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            Texto(label: 'Quem somos', tamFonte: 18),
+            const Texto(label: 'Quem somos', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Minha conta', tamFonte: 18),
+            const Texto(label: 'Minha conta', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Compra segura', tamFonte: 18),
+            const Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Sair', tamFonte: 18),
+            const Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
@@ -89,6 +87,5 @@ class Texto extends StatelessWidget {
   }
 
 }
-     
+
   
- 

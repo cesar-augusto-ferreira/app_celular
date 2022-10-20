@@ -1,61 +1,62 @@
+import 'dart:html';
 
-import 'package:app_ciclo_cell/view/tela_cadastro2.dart';
+import 'package:app_ciclo_cell/view/tela_cadastro.dart';
+import 'package:app_ciclo_cell/view/tela_cadastro3.dart';
 import 'package:app_ciclo_cell/view/tela_login.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TelaCadastro extends StatefulWidget {
-  const TelaCadastro({Key? key}) : super(key: key);
+class TelaCadastro2 extends StatefulWidget {
+  const TelaCadastro2({Key? key}) : super(key: key);
 
   @override
-  State<TelaCadastro> createState() => _TelaCadastroState();
+  State<TelaCadastro2> createState() => _TelaCadastro2State();
 }
 
-class _TelaCadastroState extends State<TelaCadastro> {
-  var nome = TextEditingController();
-  var rg = TextEditingController();
-  var cpf = TextEditingController();
-  var email = TextEditingController();
-  var confEmail = TextEditingController();
-  
+class _TelaCadastro2State extends State<TelaCadastro2> {
+  var cidade = TextEditingController();
+  var endereco = TextEditingController();
+  var complemento = TextEditingController();
+  var celular = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        // menu lateral
+      // menu lateral
       endDrawer: Drawer(
-        backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              accountName: const Text('Sergio'), 
-              accountEmail: const Text('sergio@hotmail.com'),
+              accountName: Text('Sergio'), 
+              accountEmail: Text('sergio@hotmail.com'),
               currentAccountPicture: Image.asset('lib/images/homem.png'),
             ),
             const SizedBox(height: 10,),
-            const Texto(label: 'Aumentar a performace', tamFonte: 18),
+            Texto(label: 'Aumentar a performace', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Tempo da bateria', tamFonte: 18),
+            Texto(label: 'Tempo da bateria', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Avaliar o aparelho', tamFonte: 18),
+            Texto(label: 'Avaliar o aparelho', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Backup de arquivos', tamFonte: 18),
+            Texto(label: 'Backup de arquivos', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Central de ajuda', tamFonte: 18),
+            Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            const Texto(label: 'Quem somos', tamFonte: 18),
+            Texto(label: 'Quem somos', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Minha conta', tamFonte: 18),
+            Texto(label: 'Minha conta', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Compra segura', tamFonte: 18),
+            Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
-            const Texto(label: 'Sair', tamFonte: 18),
+            Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
-
-          // Appbar
+        //appbar
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -68,7 +69,7 @@ class _TelaCadastroState extends State<TelaCadastro> {
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
 
-        //corpo da página
+          //corpo da página
       body: SingleChildScrollView(
         child: Padding(
           padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
@@ -80,25 +81,23 @@ class _TelaCadastroState extends State<TelaCadastro> {
                 const SizedBox(height: 10),
                 const Texto(label: 'Preencha os campos abaixo.', tamFonte: 18),
                 const SizedBox(height: 10),
-                const Texto(label: 'Página 1/2', tamFonte: 16),
+                const Texto(label: 'Página 2/2', tamFonte: 16),
                 const SizedBox(height: 10),
-                const CampoCadastro(label: 'Nome*', hintLabel: 'Digite o seu ',iconepref: Icons.person_outline,), 
+                const CampoTexto(label: 'Cidade', hintLabel: 'Digite o nome da sua ', iconepref: Icons.location_city_outlined,),
                 const SizedBox(height: 20,),
-                const CampoCadastro(label: 'RG*', hintLabel: 'Digite o seu', iconepref: Icons.document_scanner_outlined),
+                const CampoCadastro(label: 'Endereço', hintLabel: 'Digite o seu ', iconepref: Icons.house_outlined),
                 const SizedBox(height: 20,),
-                const CampoCadastro(label: 'CPF*', hintLabel: 'Digite o seu ', iconepref: Icons.document_scanner_outlined), 
+                const CampoCadastro(label: 'Complemento', hintLabel: 'Digite o ', iconepref: Icons.apartment_outlined), 
                 const SizedBox(height: 20,),
-                const CampoCadastro(label: 'E-mail*', hintLabel: 'Digite o seu ', iconepref: Icons.email_outlined,),
-                const SizedBox(height: 20),
-                const CampoCadastro(label: 'Confirme o e-mail*', iconepref: Icons.email_outlined,), 
-                const SizedBox(height: 60),
+                const CampoCadastro(label: 'Celular*', hintLabel: 'Digite o seu ', iconepref: Icons.smartphone_outlined),
+                const SizedBox(height: 120,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const Botao(corBotao: Colors.red, nomeBotao: 'Cancelar', acaoBotao: TelaLogin()),
+                    const Botao(corBotao: Colors.red, nomeBotao: 'Voltar', acaoBotao: TelaCadastro()),
                     const SizedBox(width: 80),
-                    const Botao(corBotao: Colors.green, nomeBotao: 'Próximo', acaoBotao: TelaCadastro2()),
+                    const Botao(corBotao: Colors.green, nomeBotao: 'Concluir', acaoBotao: TelaCadastro3()),
                   ],
                 ),
                 const SizedBox(height: 40),
@@ -115,7 +114,6 @@ class _TelaCadastroState extends State<TelaCadastro> {
   }
 }
 
-
 class CampoCadastro extends StatelessWidget {
   final String label;
   final String? hintLabel;
@@ -127,6 +125,7 @@ class CampoCadastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
       decoration: InputDecoration(
         floatingLabelAlignment: FloatingLabelAlignment.center,
         labelText: label,
@@ -141,7 +140,7 @@ class CampoCadastro extends StatelessWidget {
           iconesuf , color: Colors.white,
         ),
         labelStyle: GoogleFonts.roboto(
-          fontSize: 20,
+          fontSize: 25,
           color: Colors.white,
         ),
       ),
@@ -170,7 +169,6 @@ class Texto extends StatelessWidget {
   }
 
 }
-
 
 class Botao extends StatelessWidget {
   final Color corBotao;
