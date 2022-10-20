@@ -1,18 +1,18 @@
 <<<<<<< HEAD
+2022/10/20-13:12:48.446 3498 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.cc71ada1\flutter_tools_chrome_device.9ef55d30\Default\Site Characteristics Database/MANIFEST-000001
+2022/10/20-13:12:48.447 3498 Recovering log #6
+2022/10/20-13:12:48.447 3498 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.cc71ada1\flutter_tools_chrome_device.9ef55d30\Default\Site Characteristics Database/000006.log 
+2022/10/20-13:12:48.447 3498 Delete type=0 #3
+=======
+<<<<<<< HEAD
+2022/10/20-09:08:54.245 2f08 Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2c126085\flutter_tools_chrome_device.f7f3019e\Default\Site Characteristics Database/MANIFEST-000001
+2022/10/20-09:08:54.249 2f08 Recovering log #6
+2022/10/20-09:08:54.249 2f08 Reusing old log C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2c126085\flutter_tools_chrome_device.f7f3019e\Default\Site Characteristics Database/000006.log 
+2022/10/20-09:08:54.250 2f08 Delete type=0 #3
+=======
 2022/10/20-12:52:34.548 2a48 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Site Characteristics Database/MANIFEST-000001
 2022/10/20-12:52:34.549 2a48 Recovering log #6
 2022/10/20-12:52:34.549 2a48 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Site Characteristics Database/000006.log 
 2022/10/20-12:52:34.549 2a48 Delete type=0 #3
-=======
-<<<<<<< HEAD
-2022/10/20-08:48:39.997 3d44 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.a4238cd4\flutter_tools_chrome_device.97c76be4\Default\Site Characteristics Database/MANIFEST-000001
-2022/10/20-08:48:39.998 3d44 Recovering log #6
-2022/10/20-08:48:39.998 3d44 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.a4238cd4\flutter_tools_chrome_device.97c76be4\Default\Site Characteristics Database/000006.log 
-2022/10/20-08:48:39.998 3d44 Delete type=0 #3
-=======
-2022/10/20-10:35:34.387 6e0 Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.2e9be740\flutter_tools_chrome_device.88a8fda1\Default\Site Characteristics Database/MANIFEST-000001
-2022/10/20-10:35:34.388 6e0 Recovering log #6
-2022/10/20-10:35:34.388 6e0 Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.2e9be740\flutter_tools_chrome_device.88a8fda1\Default\Site Characteristics Database/000006.log 
-2022/10/20-10:35:34.389 6e0 Delete type=0 #3
 >>>>>>> 28df9b44dc36e6903dd1dc246acac53fe5e23bc0
 >>>>>>> d5322dd9d50b54b4b0978bca2a9309387e83ecf9

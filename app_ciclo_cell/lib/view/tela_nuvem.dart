@@ -67,29 +67,28 @@ class _TelaNuvemState extends State<TelaNuvem> {
                 label: ' Digite seu e-mail abaixo: \n',
                       tamFonte: 20,
               ),
-              CampoTexto(label: 'E-mail nuvem',hintLabel: 'Digite seu'),
+              CampoTexto(label: 'e-mail nuvem',hintLabel: 'Digite seu'),
               const SizedBox(height: 25),
               Image.asset(
                 'lib/images/nuvem.png',
-                height: 150,                
+                height: 150,  
+                              
               ),
-              
+              const SizedBox(height: 25),
              
               Row(
                 children: [
-                  SizedBox(height:20),
-                  Botao(corBotao: Colors.white, nomeBotao: 'Comprar nuvem'),
                   SizedBox(width:20),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Comprar'),
+                  SizedBox(width:60),
                   Botao(corBotao: Colors.white, nomeBotao: 'Salvar'),
                 ],
-              ),
-                         
+              ),                         
             ],
           ),
         ),
       ),
-    );
-    
+    );    
   }
 }
 
