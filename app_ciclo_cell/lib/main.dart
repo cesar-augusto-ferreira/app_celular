@@ -22,7 +22,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaAnunciar3(),
+      home: TelaAjuda(),
       debugShowCheckedModeBanner: false,
     ),
   );
