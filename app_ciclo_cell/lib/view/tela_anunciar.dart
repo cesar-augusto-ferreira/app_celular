@@ -1,18 +1,29 @@
+
+
+import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:flutter/material.dart';
 
-class TelaAnumcio extends StatefulWidget {
-  const TelaAnumcio({Key? key}) : super(key: key);
+import 'package:google_fonts/google_fonts.dart';
+
+class TelaAnunciar extends StatefulWidget {
+  const TelaAnunciar({Key? key}) : super(key: key);
 
   @override
-  State<TelaAnumcio> createState() => _TelaAnumcioState();
+  State<TelaAnunciar> createState() => _TelaAnunciarState();
 }
 
-class _TelaAnumcioState extends State<TelaAnumcio> {
+class _TelaAnunciarState extends State<TelaAnunciar> {
+  var cidade = TextEditingController();
+  var endereco = TextEditingController();
+  var complemento = TextEditingController();
+  var celular = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-     return Scaffold(
-       endDrawer: Drawer(
-        backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+    return Scaffold(
+      // menu lateral
+      endDrawer: Drawer(
+        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
         child: Column(
           children: [
@@ -32,17 +43,15 @@ class _TelaAnumcioState extends State<TelaAnumcio> {
             const SizedBox(height: 10,),
             const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            const Texto(label: 'Quem somos', tamFonte: 18),
+            const Texto(label: 'Sobre', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Minha conta', tamFonte: 18),
-            const SizedBox(height: 10,),
-            const Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
-
+        //appbar
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -51,21 +60,113 @@ class _TelaAnumcioState extends State<TelaAnumcio> {
             fontSize: 35,
             color: Color.fromARGB(255, 15, 234, 22),
           ),
-          ),
+        ),
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+
+          //corpo da página
+      body: SingleChildScrollView(
+        child: Padding(
+          padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Center(
+            child: Column(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                Row(
+                  children: [
+                    Image.asset(
+                      'lib/images/homem.png',
+                      height: 60,
+                    ),
+                    const SizedBox(height: 20),
+                    const Texto(label: 'Sergio', tamFonte: 25),
+                  ],
+                ),
+                const SizedBox(height: 25),
+                const Texto(label: 
+                  'Preencha com os dados do aparelho', tamFonte: 18,
+                ),
+                const SizedBox(height: 40),
+                const CampoCadastroA(label: '*Marca', hintLabel: 'Digite a marca do aparelho ', iconepref: Icons.mobile_friendly),
+                const SizedBox(height: 20,),
+                const CampoCadastroA(label: '*Modelo', hintLabel: 'Digite o modelo do aparelho ', iconepref: Icons.mobile_friendly),
+                const SizedBox(height: 20,),
+                const CampoCadastroA(label: '*Memória Ram', hintLabel: 'Digite a quantidade de memória ram', iconepref: Icons.mobile_friendly),
+                const SizedBox(height: 20,),
+                const CampoCadastroA(label: '*Memória interna', hintLabel: 'Digite a quantidade de memória interna', iconepref: Icons.mobile_friendly), 
+                const SizedBox(height: 75,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Botao(corBotao: Colors.white, nomeBotao: 'Voltar', acaoBotao: TelaPrincipal()),
+                    const SizedBox(width: 80),
+                    const Botao(corBotao: Colors.white, nomeBotao: 'Proximo'),
+                  ],
+                ),
+                const SizedBox(height: 30),
+                const Texto(label: '* Campos obrigatórios', tamFonte: 14),
+                const SizedBox(height: 15),
+                Row(
+                  children: [
+                    const SizedBox(width: 250),
+                    const Texto(label: 'CicloCell', tamFonte: 16),
+                  ],
+                ),
+                
+              ],
+            ),
+          ),
+        ),
+      ),
+
     );
     
   }
 }
 
+class TelaAnunciar2 {
+}
 
+class CampoCadastroA extends StatelessWidget {
+  final String label;
+  final String? hintLabel;
+  final IconData? iconepref;
+  final IconData? iconesuf;
 
+  const CampoCadastroA({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
 
-
-
-
-
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      
+      decoration: InputDecoration(
+        floatingLabelAlignment: FloatingLabelAlignment.center,
+        labelText: label,
+        hintText: '$hintLabel',
+        hintStyle: TextStyle(
+          color: Colors.black,
+        ),
+        prefixIcon: iconepref == null ? null : Icon(
+          iconepref, color: Colors.white,
+        ),
+        suffixIcon: iconesuf == null ? null : Icon(
+          iconesuf , color: Colors.white,
+        ),
+        fillColor: Colors.white,
+        filled: true,
+        labelStyle: GoogleFonts.roboto(
+          fontSize: 25,
+          color: Colors.black,
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(1),
+        ),
+      ),
+    );
+    
+  }
+}
 
 
 class Texto extends StatelessWidget {
@@ -88,4 +189,40 @@ class Texto extends StatelessWidget {
 
 }
 
-  
+class Botao extends StatelessWidget {
+  final Color corBotao;
+  final String nomeBotao;
+  final dynamic? acaoBotao;
+
+  const Botao({Key? key, required this.corBotao, required this.nomeBotao, this.acaoBotao}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size(120, 50),
+        primary: corBotao,
+      ), 
+      child:  Text(
+        nomeBotao,
+        style: const TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+      ),
+
+      onPressed: () { 
+        Navigator.push(
+          context, MaterialPageRoute(
+            builder: (
+              BuildContext context
+            ) 
+            => acaoBotao, 
+          )
+        );
+      },
+    );
+  }
+}
+
+

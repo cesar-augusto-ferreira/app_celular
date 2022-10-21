@@ -68,7 +68,7 @@ class _TelaRecuperarSenha2State extends State<TelaRecuperarSenha2> {
               children: [
                 const Texto(label: 'Recuperaçao de senha', tamFonte: 25),
                 const SizedBox(height: 20),
-                const Texto(label: 'Sua senha foi enviada para seu', tamFonte: 18),
+                const Texto(label: 'Sua senha foi enviada para seu E-mail', tamFonte: 18),
                 const SizedBox(height: 50),
                 Image.asset(
                   'lib/images/ok.png',

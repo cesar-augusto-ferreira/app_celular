@@ -1,21 +1,15 @@
-import 'package:app_ciclo_cell/view/tela_avaliacao.dart';
-import 'package:app_ciclo_cell/view/tela_avaliacao2.dart';
-import 'package:app_ciclo_cell/view/tela_cadastro.dart';
-import 'package:app_ciclo_cell/view/tela_cadastro3.dart';
-import 'package:app_ciclo_cell/view/tela_login.dart';
+
 import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:flutter/material.dart';
 
-import 'package:google_fonts/google_fonts.dart';
-
-class TelaAvaliacao3 extends StatefulWidget {
-  const TelaAvaliacao3({Key? key}) : super(key: key);
+class TelaAnunciar3 extends StatefulWidget {
+  const TelaAnunciar3({Key? key}) : super(key: key);
 
   @override
-  State<TelaAvaliacao3> createState() => _TelaAvaliacao3State();
+  State<TelaAnunciar3> createState() => _TelaAnunciar3State();
 }
 
-class _TelaAvaliacao3State extends State<TelaAvaliacao3> {
+class _TelaAnunciar3State extends State<TelaAnunciar3> {
   var cidade = TextEditingController();
   var endereco = TextEditingController();
   var complemento = TextEditingController();
@@ -74,26 +68,19 @@ class _TelaAvaliacao3State extends State<TelaAvaliacao3> {
             child: Column(
               children: [
                 const SizedBox(height: 55),
-                const Texto(label: 'Seu aparelho foi avaliado', tamFonte: 25),
+                const Texto(label: 'Seu aparelho foi anunciado', tamFonte: 25),
                 const SizedBox(height: 25),
-                const Texto(label: 'Seu aparelho foi \n\t avaliado em:', tamFonte: 25),
+                const Texto(label: 'Com sucesso por', tamFonte: 25),
                 const SizedBox(height: 25),
                 const Texto(label: ' R\$ 1399,00 ', tamFonte: 25),
-                const SizedBox(height: 50),
+                const SizedBox(height: 60),
                 Image.asset(
                   'lib/images/ok.png',
                   height: 120,
                 ),
-                 const SizedBox(height: 115),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Botao(corBotao: Colors.white, nomeBotao:'Home', acaoBotao: TelaPrincipal()),
-                    const SizedBox(width: 95),
-                    Botao(corBotao: Colors.white, nomeBotao:'Anunciar', acaoBotao: TelaAvaliacao(),),
-                  ],
-                ),
-                const SizedBox(height: 50),
+                const SizedBox(height: 115),
+                Botao(corBotao: Colors.white, nomeBotao:'Home', acaoBotao: TelaPrincipal()),
+                const SizedBox(height: 80),
                  Row(
                   children: [
                     const SizedBox(width: 250),

@@ -1,30 +1,27 @@
-
-import 'package:app_ciclo_cell/view/tela_cadastro2.dart';
-import 'package:app_ciclo_cell/view/tela_login.dart';
+import 'package:app_ciclo_cell/view/tela_avaliacao.dart';
+import 'package:app_ciclo_cell/view/tela_avaliacao3.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class TelaCadastro extends StatefulWidget {
-  const TelaCadastro({Key? key}) : super(key: key);
+class TelaAnunciar2 extends StatefulWidget {
+  const TelaAnunciar2({Key? key}) : super(key: key);
 
   @override
-  State<TelaCadastro> createState() => _TelaCadastroState();
+  State<TelaAnunciar2> createState() => _TelaAnunciar2State();
 }
 
-class _TelaCadastroState extends State<TelaCadastro> {
-  var nome = TextEditingController();
-  var rg = TextEditingController();
-  var cpf = TextEditingController();
-  var email = TextEditingController();
-  var confEmail = TextEditingController();
-  
+class _TelaAnunciar2State extends State<TelaAnunciar2> {
+  var cidade = TextEditingController();
+  var endereco = TextEditingController();
+  var complemento = TextEditingController();
+  var celular = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        // menu lateral
+      // menu lateral
       endDrawer: Drawer(
-        backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
         width: 250,
         child: Column(
           children: [
@@ -47,13 +44,13 @@ class _TelaCadastroState extends State<TelaCadastro> {
             const Texto(label: 'Sobre', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Minha conta', tamFonte: 18),
+        
             const SizedBox(height: 10,),
             const Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
-
-          // Appbar
+        //appbar
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -66,48 +63,77 @@ class _TelaCadastroState extends State<TelaCadastro> {
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
 
-        //corpo da página
+          //corpo da página
       body: SingleChildScrollView(
         child: Padding(
           padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Center(
             child: Column(
-              // ignore: prefer_const_literals_to_create_immutables
               children: [
-                const Texto(label: 'Cadastro', tamFonte: 25),
-                const SizedBox(height: 10),
-                const Texto(label: 'Preencha os campos abaixo.', tamFonte: 18),
-                const SizedBox(height: 10),
-                const Texto(label: 'Página 1/2', tamFonte: 16),
-                const SizedBox(height: 10),
-                const CampoCadastro(label: 'Nome*', hintLabel: 'Digite o seu ',iconepref: Icons.person_outline,), 
-                const SizedBox(height: 20,),
-                const CampoCadastro(label: 'RG*', hintLabel: 'Digite o seu', iconepref: Icons.document_scanner_outlined),
-                const SizedBox(height: 20,),
-                const CampoCadastro(label: 'CPF*', hintLabel: 'Digite o seu ', iconepref: Icons.document_scanner_outlined), 
-                const SizedBox(height: 20,),
-                const CampoCadastro(label: 'E-mail*', hintLabel: 'Digite o seu ', iconepref: Icons.email_outlined,),
-                const SizedBox(height: 20),
-                const CampoCadastro(label: 'Confirme o e-mail*', iconepref: Icons.email_outlined,), 
-                const SizedBox(height: 45),
+                Image.asset(
+                      'lib/images/homem.png',
+                      height: 60,
+                    ),
+                    const SizedBox(height: 20),
+                    const Texto(label: 'Sergio', tamFonte: 25),
+                const SizedBox(height: 25),
+                const Texto(label: 
+                  'Preencha os dados de seu aparelho ', tamFonte: 18),
+                const SizedBox(height: 65),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const Botao(corBotao: Colors.red, nomeBotao: 'Cancelar', acaoBotao: TelaLogin()),
-                    const SizedBox(width: 80),
-                    const Botao(corBotao: Colors.green, nomeBotao: 'Próximo', acaoBotao: TelaCadastro2()),
+                    const Texto(label: 'Tela trocada', tamFonte: 18),
+                    const SizedBox(width: 90,),
+                    const BotaoCheck(),
                   ],
                 ),
-                const SizedBox(height: 30),
-                const Texto(label: '* Campos obrigatórios', tamFonte: 14),
-                const SizedBox(height: 15),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Texto(label: 'Tela trincada', tamFonte: 18),
+                    const SizedBox(width: 90,),
+                    BotaoCheck(),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Texto(label: 'Ralado na traseira', tamFonte: 18),
+                    const SizedBox(width: 50,),
+                    BotaoCheck(),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Texto(label: 'Detalhes no aparelho', tamFonte: 18),
+                    const SizedBox(width: 30,),
+                    BotaoCheck(),
+                  ],
+                ),
+                const SizedBox(height: 110,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Botao(corBotao: Colors.white, nomeBotao: 'Voltar', acaoBotao: TelaAvaliacao()),
+                    const SizedBox(width: 80),
+                    const Botao(corBotao: Colors.white, nomeBotao: 'Proximo', acaoBotao: TelaAvaliacao3()),
+                  ],
+                ),
+                const SizedBox(height: 50),
                 Row(
                   children: [
                     const SizedBox(width: 250),
                     const Texto(label: 'CicloCell', tamFonte: 16),
                   ],
                 ),
+                
               ],
             ),
           ),
@@ -119,25 +145,24 @@ class _TelaCadastroState extends State<TelaCadastro> {
   }
 }
 
-
-class CampoCadastro extends StatelessWidget {
+class CampoCadastroA extends StatelessWidget {
   final String label;
   final String? hintLabel;
   final IconData? iconepref;
   final IconData? iconesuf;
 
-  const CampoCadastro({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
+  const CampoCadastroA({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
       decoration: InputDecoration(
         floatingLabelAlignment: FloatingLabelAlignment.center,
         labelText: label,
-        hintText: '$hintLabel $label',
+        hintText: '$hintLabel',
         hintStyle: TextStyle(
           color: Colors.white,
-          fontSize: 18,
         ),
         prefixIcon: iconepref == null ? null : Icon(
           iconepref, color: Colors.white,
@@ -146,7 +171,7 @@ class CampoCadastro extends StatelessWidget {
           iconesuf , color: Colors.white,
         ),
         labelStyle: GoogleFonts.roboto(
-          fontSize: 20,
+          fontSize: 25,
           color: Colors.white,
         ),
       ),
@@ -175,7 +200,6 @@ class Texto extends StatelessWidget {
   }
 
 }
-
 
 class Botao extends StatelessWidget {
   final Color corBotao;
@@ -210,5 +234,30 @@ class Botao extends StatelessWidget {
         );
       },
     );
+  }
+}
+
+
+class BotaoCheck extends StatefulWidget {
+  const BotaoCheck({Key? key}) : super(key: key);
+
+  @override
+  State<BotaoCheck> createState() => _BotaoCheckState();
+}
+
+class _BotaoCheckState extends State<BotaoCheck> {
+  dynamic checkValue = false;
+  @override
+  Widget build(BuildContext context) {
+    return Checkbox(
+      value: checkValue,
+      onChanged: (value) {
+        setState(() {
+          checkValue = value;
+        });
+        
+      },
+      );
+    
   }
 }

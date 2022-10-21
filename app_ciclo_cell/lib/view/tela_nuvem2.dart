@@ -1,4 +1,5 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
+import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -34,11 +35,9 @@ class _TelaNuvem2State extends State<TelaNuvem2> {
             const SizedBox(height: 10,),
             const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            const Texto(label: 'Quem somos', tamFonte: 18),
+            const Texto(label: 'sobre', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Minha conta', tamFonte: 18),
-            const SizedBox(height: 10,),
-            const Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Sair', tamFonte: 18),
           ],
@@ -78,7 +77,7 @@ class _TelaNuvem2State extends State<TelaNuvem2> {
               Row(
                 children: [
                   SizedBox(width:105),
-                  Botao(corBotao: Colors.white, nomeBotao: 'Home'),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Home', acaoBotao: TelaPrincipal(),),
                 ],
               ),                         
             ],

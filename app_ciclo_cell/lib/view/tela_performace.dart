@@ -1,4 +1,5 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
+import 'package:app_ciclo_cell/view/tela_performance2.dart';
 import 'package:flutter/material.dart';
 
 class TelaPerformace extends StatefulWidget {
@@ -70,7 +71,7 @@ class _TelaPerformaceState extends State<TelaPerformace> {
                 height: 150,                
               ),
               SizedBox(height:40),
-              Botao(corBotao: Colors.white, nomeBotao: '+ Performance'),
+              Botao(corBotao: Colors.white, nomeBotao: '+ Performance', acaoBotao: TelaPerformace2(),),
 
 
             ],

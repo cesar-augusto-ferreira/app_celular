@@ -1,20 +1,9 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-2022/10/20-13:12:48.630 1dbc Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.cc71ada1\flutter_tools_chrome_device.9ef55d30\Default\Service Worker\Database/MANIFEST-000001
-2022/10/20-13:12:48.630 1dbc Recovering log #3
-2022/10/20-13:12:48.631 1dbc Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.cc71ada1\flutter_tools_chrome_device.9ef55d30\Default\Service Worker\Database/000003.log 
+2022/10/20-22:19:41.980 344c Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.99909d49\flutter_tools_chrome_device.6480a86d\Default\Service Worker\Database/MANIFEST-000001
+2022/10/20-22:19:41.981 344c Recovering log #3
+2022/10/20-22:19:41.982 344c Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.99909d49\flutter_tools_chrome_device.6480a86d\Default\Service Worker\Database/000003.log 
 =======
-<<<<<<< HEAD
-2022/10/20-10:45:50.520 3378 Creating DB C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2c126085\flutter_tools_chrome_device.f7f3019e\Default\Service Worker\Database since it was missing.
-2022/10/20-10:45:50.538 3378 Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.2c126085\flutter_tools_chrome_device.f7f3019e\Default\Service Worker\Database/MANIFEST-000001
-=======
-2022/10/20-12:52:34.662 434c Reusing MANIFEST C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Service Worker\Database/MANIFEST-000001
-2022/10/20-12:52:34.662 434c Recovering log #3
-2022/10/20-12:52:34.663 434c Reusing old log C:\Users\cesar\AppData\Local\Temp\flutter_tools.1af7158f\flutter_tools_chrome_device.331d9c57\Default\Service Worker\Database/000003.log 
->>>>>>> 28df9b44dc36e6903dd1dc246acac53fe5e23bc0
->>>>>>> d5322dd9d50b54b4b0978bca2a9309387e83ecf9
-=======
-2022/10/20-15:13:18.197 2b30 Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.b52f361b\flutter_tools_chrome_device.de1cbc51\Default\Service Worker\Database/MANIFEST-000001
-2022/10/20-15:13:18.197 2b30 Recovering log #3
-2022/10/20-15:13:18.198 2b30 Reusing old log C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.b52f361b\flutter_tools_chrome_device.de1cbc51\Default\Service Worker\Database/000003.log 
+2022/10/20-20:50:14.667 1a48 Reusing MANIFEST C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.907b62d9\flutter_tools_chrome_device.daa91771\Default\Service Worker\Database/MANIFEST-000001
+2022/10/20-20:50:14.670 1a48 Recovering log #3
+2022/10/20-20:50:14.674 1a48 Reusing old log C:\Users\DEUSDE~1\AppData\Local\Temp\flutter_tools.907b62d9\flutter_tools_chrome_device.daa91771\Default\Service Worker\Database/000003.log 
 >>>>>>> ef01491c72fc34f0b83af4a0c94366b94360241d
