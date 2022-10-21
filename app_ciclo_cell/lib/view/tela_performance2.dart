@@ -1,14 +1,14 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
 
-class TelaPerformace extends StatefulWidget {
-  const TelaPerformace({Key? key}) : super(key: key);
+class TelaPerformace2 extends StatefulWidget {
+  const TelaPerformace2({Key? key}) : super(key: key);
 
   @override
-  State<TelaPerformace> createState() => _TelaPerformaceState();
+  State<TelaPerformace2> createState() => _TelaPerformace2State();
 }
 
-class _TelaPerformaceState extends State<TelaPerformace> {
+class _TelaPerformace2State extends State<TelaPerformace2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,9 +33,11 @@ class _TelaPerformaceState extends State<TelaPerformace> {
             const SizedBox(height: 10,),
             const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            const Texto(label: 'Sobre', tamFonte: 18),
+            const Texto(label: 'Quem somos', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Minha conta', tamFonte: 18),
+            const SizedBox(height: 10,),
+            const Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Sair', tamFonte: 18),
           ],
@@ -58,21 +60,27 @@ class _TelaPerformaceState extends State<TelaPerformace> {
         child: Center(
           child: Column(
             children: [
-              Texto(label: 'Mais performance! ', tamFonte: 20),
+              Texto(label: 'Descobrimos! ', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: '   Essa função elimina os cokies, fecha os aplicativos em segundo plano'
-                ' e sugere a remoção de aplicativos antigos, que não estão sendo utilizados.', tamFonte: 20
+                label: ' 33.7 Mb - Cookies \n'
+                      ' 179,9 Mb - App sem uso recente \n'
+                      ' 255,6 MB - Fotos e videos', tamFonte: 20
               ),
               const SizedBox(height: 30),
               Image.asset(
                 'lib/images/forca.png',
                 height: 150,                
               ),
-              SizedBox(height:40),
-              Botao(corBotao: Colors.white, nomeBotao: '+ Performance'),
-
-
+              Row(
+                children:[
+              SizedBox(height:30),
+              Botao(corBotao: Colors.white, nomeBotao: 'Nuvem'),
+              const SizedBox(height:100),
+              SizedBox(width:80),
+              Botao(corBotao: Colors.white, nomeBotao: 'Limpar'),
+                ],
+              ),           
             ],
           ),
         ),

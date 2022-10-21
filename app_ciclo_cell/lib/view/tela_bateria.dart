@@ -1,3 +1,4 @@
+import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -57,7 +58,7 @@ class _TelaBateriaState extends State<TelaBateria> {
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
       body: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 100),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 70),
         child: Center(
           child: Column(
             children: [
@@ -70,8 +71,12 @@ class _TelaBateriaState extends State<TelaBateria> {
               const SizedBox(height: 30),
               Image.asset(
                 'lib/images/reciclagem.png',
-                height: 150,
-              ),                
+                height: 150,                
+              ),
+              SizedBox(height:30),
+              Botao(corBotao: Colors.white, nomeBotao: 'Iniciar teste'),
+
+
             ],
           ),
         ),

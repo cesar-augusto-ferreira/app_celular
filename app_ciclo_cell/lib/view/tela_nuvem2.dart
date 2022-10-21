@@ -1,14 +1,15 @@
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class TelaPerformace extends StatefulWidget {
-  const TelaPerformace({Key? key}) : super(key: key);
+class TelaNuvem2 extends StatefulWidget {
+  const TelaNuvem2({Key? key}) : super(key: key);
 
   @override
-  State<TelaPerformace> createState() => _TelaPerformaceState();
+  State<TelaNuvem2> createState() => _TelaNuvem2State();
 }
 
-class _TelaPerformaceState extends State<TelaPerformace> {
+class _TelaNuvem2State extends State<TelaNuvem2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,9 +34,11 @@ class _TelaPerformaceState extends State<TelaPerformace> {
             const SizedBox(height: 10,),
             const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            const Texto(label: 'Sobre', tamFonte: 18),
+            const Texto(label: 'Quem somos', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Minha conta', tamFonte: 18),
+            const SizedBox(height: 10,),
+            const Texto(label: 'Compra segura', tamFonte: 18),
             const SizedBox(height: 10,),
             const Texto(label: 'Sair', tamFonte: 18),
           ],
@@ -58,27 +61,31 @@ class _TelaPerformaceState extends State<TelaPerformace> {
         child: Center(
           child: Column(
             children: [
-              Texto(label: 'Mais performance! ', tamFonte: 20),
+              Texto(label: 'Conteúdo enviado para nuvem de: ', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: '   Essa função elimina os cokies, fecha os aplicativos em segundo plano'
-                ' e sugere a remoção de aplicativos antigos, que não estão sendo utilizados.', tamFonte: 20
+                label: ' sergio@hotmail.com',
+                      tamFonte: 30,
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 25),
               Image.asset(
-                'lib/images/forca.png',
-                height: 150,                
+                'lib/images/nuvem.png',
+                height: 150,  
+                              
               ),
-              SizedBox(height:40),
-              Botao(corBotao: Colors.white, nomeBotao: '+ Performance'),
-
-
+              const SizedBox(height: 25),
+             
+              Row(
+                children: [
+                  SizedBox(width:105),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Home'),
+                ],
+              ),                         
             ],
           ),
         ),
       ),
-    );
-    
+    );    
   }
 }
 
@@ -99,7 +106,47 @@ class Texto extends StatelessWidget {
       ),
     );   
   }
+}
 
+  class CampoTexto extends StatelessWidget {
+  final String label;
+  final String? hintLabel;
+  final IconData? iconepref;
+  final IconData? iconesuf;
+
+  const CampoTexto({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      
+      decoration: InputDecoration(
+        floatingLabelAlignment: FloatingLabelAlignment.center,
+        labelText: label,
+        hintText: '$hintLabel $label',
+        hintStyle: TextStyle(
+          color: Colors.black,
+        ),
+        prefixIcon: iconepref == null ? null : Icon(
+          iconepref, color: Colors.white,
+        ),
+        suffixIcon: iconesuf == null ? null : Icon(
+          iconesuf , color: Colors.white,
+        ),
+        fillColor: Colors.white,
+        filled: true,
+        labelStyle: GoogleFonts.roboto(
+          fontSize: 25,
+          color: Colors.black,
+
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(1),
+        ),
+      ),
+    );
+    
+  }
 }
      
   
