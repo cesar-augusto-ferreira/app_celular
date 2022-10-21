@@ -76,6 +76,7 @@ class _TelaPerformace2State extends State<TelaPerformace2> {
                 children:[
               SizedBox(height:30),
               Botao(corBotao: Colors.white, nomeBotao: 'Nuvem'),
+              const SizedBox(height:100),
               SizedBox(width:80),
               Botao(corBotao: Colors.white, nomeBotao: 'Limpar'),
                 ],

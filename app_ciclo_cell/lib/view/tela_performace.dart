@@ -71,7 +71,7 @@ class _TelaPerformaceState extends State<TelaPerformace> {
                 'lib/images/forca.png',
                 height: 150,                
               ),
-              SizedBox(height:20),
+              SizedBox(height:40),
               Botao(corBotao: Colors.white, nomeBotao: '+ Performance'),
 
 
