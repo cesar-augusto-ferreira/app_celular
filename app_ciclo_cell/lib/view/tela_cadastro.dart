@@ -91,7 +91,7 @@ class _TelaCadastroState extends State<TelaCadastro> {
                 const CampoCadastro(label: 'E-mail*', hintLabel: 'Digite o seu ', iconepref: Icons.email_outlined,),
                 const SizedBox(height: 20),
                 const CampoCadastro(label: 'Confirme o e-mail*', iconepref: Icons.email_outlined,), 
-                const SizedBox(height: 60),
+                const SizedBox(height: 45),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   // ignore: prefer_const_literals_to_create_immutables
@@ -101,9 +101,15 @@ class _TelaCadastroState extends State<TelaCadastro> {
                     const Botao(corBotao: Colors.green, nomeBotao: 'Próximo', acaoBotao: TelaCadastro2()),
                   ],
                 ),
-                const SizedBox(height: 40),
-                const Texto(label: '* Campos obrigatórios', tamFonte: 12),
-                
+                const SizedBox(height: 30),
+                const Texto(label: '* Campos obrigatórios', tamFonte: 14),
+                const SizedBox(height: 15),
+                Row(
+                  children: [
+                    const SizedBox(width: 250),
+                    const Texto(label: 'CicloCell', tamFonte: 16),
+                  ],
+                ),
               ],
             ),
           ),
@@ -133,6 +139,7 @@ class CampoCadastro extends StatelessWidget {
         hintText: '$hintLabel $label',
         hintStyle: TextStyle(
           color: Colors.white,
+          fontSize: 18,
         ),
         prefixIcon: iconepref == null ? null : Icon(
           iconepref, color: Colors.white,

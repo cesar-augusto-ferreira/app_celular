@@ -90,7 +90,7 @@ class _TelaCadastro2State extends State<TelaCadastro2> {
                 const CampoCadastro(label: 'Complemento', hintLabel: 'Digite o ', iconepref: Icons.apartment_outlined), 
                 const SizedBox(height: 20,),
                 const CampoCadastro(label: 'Celular*', hintLabel: 'Digite o seu ', iconepref: Icons.smartphone_outlined),
-                const SizedBox(height: 120,),
+                const SizedBox(height: 100,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   // ignore: prefer_const_literals_to_create_immutables
@@ -100,8 +100,15 @@ class _TelaCadastro2State extends State<TelaCadastro2> {
                     const Botao(corBotao: Colors.green, nomeBotao: 'Concluir', acaoBotao: TelaCadastro3()),
                   ],
                 ),
-                const SizedBox(height: 40),
-                const Texto(label: '* Campos obrigatórios', tamFonte: 12),
+                const SizedBox(height: 30),
+                const Texto(label: '* Campos obrigatórios', tamFonte: 14),
+                const SizedBox(height: 15),
+                Row(
+                  children: [
+                    const SizedBox(width: 250),
+                    const Texto(label: 'CicloCell', tamFonte: 16),
+                  ],
+                ),
                 
               ],
             ),

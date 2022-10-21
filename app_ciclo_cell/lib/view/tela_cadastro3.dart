@@ -65,7 +65,7 @@ class _TelaCadastro3State extends State<TelaCadastro3> {
           //corpo da página
       body: SingleChildScrollView(
         child: Padding(
-          padding:const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+          padding:const EdgeInsets.symmetric(horizontal: 20, vertical: 90),
           child: Center(
             child: Column(
               // ignore: prefer_const_literals_to_create_immutables
@@ -79,10 +79,15 @@ class _TelaCadastro3State extends State<TelaCadastro3> {
                 ),
                 const SizedBox(height: 50),
                 const Texto(label: 'Obrigado', tamFonte: 16),
-                const SizedBox(height: 10),  
-                const Botao(corBotao: Colors.green, nomeBotao: 'Concluir', acaoBotao: TelaCadastro3()),
-                const SizedBox(height: 40),
-                const Texto(label: '* Campos obrigatórios', tamFonte: 12),
+                const SizedBox(height: 40),  
+                const Botao(corBotao: Colors.green, nomeBotao: 'Concluir', acaoBotao: TelaLogin()),
+                const SizedBox(height: 130),
+                Row(
+                  children: [
+                    const SizedBox(width: 250),
+                    const Texto(label: 'CicloCell', tamFonte: 16),
+                  ],
+                ),
                 
               ],
             ),
@@ -102,7 +107,7 @@ class CampoCadastro extends StatelessWidget {
   final IconData? iconepref;
   final IconData? iconesuf;
 
-  const CampoCadastro({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf}) : super(key: key);
+  const CampoCadastro({Key? key, required this.label, this.hintLabel, this.iconepref, this.iconesuf, }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -135,14 +140,15 @@ class CampoCadastro extends StatelessWidget {
 class Texto extends StatelessWidget {
   final String label;
   final dynamic tamFonte;
+  final dynamic? alinhamento;
 
-  const Texto({Key? key, required this.label, required this.tamFonte}) : super(key: key);
+  const Texto({Key? key, required this.label, required this.tamFonte, this.alinhamento}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       label,
-      textAlign: TextAlign.start,
+      textAlign: alinhamento,
       style: TextStyle(
         color: Colors.white,
         fontSize: tamFonte,
