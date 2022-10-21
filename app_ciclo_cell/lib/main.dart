@@ -7,6 +7,7 @@ import 'package:app_ciclo_cell/view/tela_bateria2.dart';
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
 import 'package:app_ciclo_cell/view/tela_login.dart';
 import 'package:app_ciclo_cell/view/tela_nuvem.dart';
+import 'package:app_ciclo_cell/view/tela_nuvem2.dart';
 import 'package:app_ciclo_cell/view/tela_performace.dart';
 import 'package:app_ciclo_cell/view/tela_performance2.dart';
 import 'package:app_ciclo_cell/view/tela_principal.dart';
@@ -17,7 +18,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaNuvem(),
+      home: TelaNuvem2(),
       debugShowCheckedModeBanner: false,
     ),
   );

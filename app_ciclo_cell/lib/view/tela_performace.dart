@@ -63,8 +63,8 @@ class _TelaPerformaceState extends State<TelaPerformace> {
               Texto(label: 'Mais performance! ', tamFonte: 20),
               const SizedBox(height: 20),
               Texto(
-                label: ' Essa função elimina os cokies, fecha os aplicativos em segundo plano'
-                'e sugere a remoção de aplicativos antigos que não estão sendo utilizados', tamFonte: 20
+                label: '   Essa função elimina os cokies, fecha os aplicativos em segundo plano'
+                ' e sugere a remoção de aplicativos antigos, que não estão sendo utilizados.', tamFonte: 20
               ),
               const SizedBox(height: 30),
               Image.asset(

@@ -72,12 +72,14 @@ class _TelaPerformace2State extends State<TelaPerformace2> {
                 'lib/images/forca.png',
                 height: 150,                
               ),
-              
-              SizedBox(height:20),
-              Botao(corBotao: Colors.white, nomeBotao: 'Salvar na nuvem'),
-              SizedBox(height:20),
+              Row(
+                children:[
+              SizedBox(height:30),
+              Botao(corBotao: Colors.white, nomeBotao: 'Nuvem'),
+              SizedBox(width:80),
               Botao(corBotao: Colors.white, nomeBotao: 'Limpar'),
-                         
+                ],
+              ),           
             ],
           ),
         ),
