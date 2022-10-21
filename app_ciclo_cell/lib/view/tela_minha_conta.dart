@@ -1,10 +1,6 @@
 
-import 'package:app_ciclo_cell/view/tela_cadastro.dart';
-import 'package:app_ciclo_cell/view/tela_login.dart';
 import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TelaMinhaConta extends StatefulWidget {
@@ -20,33 +16,31 @@ class _TelaMinhaContaState extends State<TelaMinhaConta> {
     return Scaffold(
       // menu lateral
       endDrawer: Drawer(
-        backgroundColor: Color.fromRGBO(68, 56, 71, 1),
+        backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
         width: 250,
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Sergio'), 
-              accountEmail: Text('sergio@hotmail.com'),
+              accountName: const Text('Sergio'), 
+              accountEmail: const Text('sergio@hotmail.com'),
               currentAccountPicture: Image.asset('lib/images/homem.png'),
             ),
             const SizedBox(height: 10,),
-            Texto(label: 'Aumentar a performace', tamFonte: 18),
+            const Texto(label: 'Aumentar a performace', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Tempo da bateria', tamFonte: 18),
+            const Texto(label: 'Tempo da bateria', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Avaliar o aparelho', tamFonte: 18),
+            const Texto(label: 'Avaliar o aparelho', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Backup de arquivos', tamFonte: 18),
+            const Texto(label: 'Backup de arquivos', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Central de ajuda', tamFonte: 18),
+            const Texto(label: 'Central de ajuda', tamFonte: 18),
             const SizedBox(height: 40,),
-            Texto(label: 'Quem somos', tamFonte: 18),
+            const Texto(label: 'Sobre', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Minha conta', tamFonte: 18),
+            const Texto(label: 'Minha conta', tamFonte: 18),
             const SizedBox(height: 10,),
-            Texto(label: 'Compra segura', tamFonte: 18),
-            const SizedBox(height: 10,),
-            Texto(label: 'Sair', tamFonte: 18),
+            const Texto(label: 'Sair', tamFonte: 18),
           ],
         ),
       ),
@@ -72,7 +66,7 @@ class _TelaMinhaContaState extends State<TelaMinhaConta> {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
               Container(
-                padding: EdgeInsets.all(2),
+                padding: const EdgeInsets.all(2),
                 color: Colors.white,
                 child: Image.asset(
                   'lib/images/homem.png',

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:app_ciclo_cell/view/tela_ajuda.dart';
 import 'package:app_ciclo_cell/view/tela_anunciar.dart';
 import 'package:app_ciclo_cell/view/tela_avaliacao.dart';
 import 'package:app_ciclo_cell/view/tela_cadastro.dart';
@@ -16,7 +17,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaQuemSomos(),
+      home: TelaAjuda(),
       debugShowCheckedModeBanner: false,
     ),
   );

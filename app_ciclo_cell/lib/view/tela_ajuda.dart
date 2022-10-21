@@ -56,6 +56,9 @@ class _TelaAjudaState extends State<TelaAjuda> {
           ),
       ),
       backgroundColor: const Color.fromRGBO(68, 56, 71, 1),
+
+      body: SingleChildScrollView(
+      ),
     );
     
   }
