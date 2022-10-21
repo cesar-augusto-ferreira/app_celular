@@ -83,12 +83,13 @@ class _TelaAjudaState extends State<TelaAjuda> {
                   children: [
                     const Botao(corBotao: Colors.white, nomeBotao: 'Voltar', acaoBotao: TelaPrincipal()),
                     const SizedBox(width: 80),
-                    const Botao(corBotao: Colors.white, nomeBotao: 'Enviar', acaoBotao: TelaAvaliacao2()),
+                    const Botao(corBotao: Colors.white, nomeBotao: 'Enviar', acaoBotao: CxDialogo()),
                   ],
                 ),
                 const SizedBox(height: 30),
                 const Texto(label: '* Campos obrigatórios', tamFonte: 14),
                 const SizedBox(height: 15),
+                
                 Row(
                   children: [
                     const SizedBox(width: 250),
@@ -110,13 +111,7 @@ class CampoCadastroD extends StatelessWidget {
   final IconData? iconepref;
   final IconData? iconesuf;
 
-  const CampoCadastroD(
-      {Key? key,
-      required this.label,
-      this.hintLabel,
-      this.iconepref,
-      this.iconesuf})
-      : super(key: key);
+  const CampoCadastroD({Key? key, required this.label, this.hintLabel, this.iconepref,this.iconesuf}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -170,8 +165,7 @@ class Texto extends StatelessWidget {
   final String label;
   final dynamic tamFonte;
 
-  const Texto({Key? key, required this.label, required this.tamFonte})
-      : super(key: key);
+  const Texto({Key? key, required this.label, required this.tamFonte}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -191,12 +185,7 @@ class Botao extends StatelessWidget {
   final String nomeBotao;
   final dynamic? acaoBotao;
 
-  const Botao(
-      {Key? key,
-      required this.corBotao,
-      required this.nomeBotao,
-      this.acaoBotao})
-      : super(key: key);
+  const Botao({Key? key, required this.corBotao, required this.nomeBotao, this.acaoBotao}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -223,59 +212,39 @@ class Botao extends StatelessWidget {
   }
 }
 
-class BotaoEspecial extends StatefulWidget {
-  final String nomeBotao1;
-  const BotaoEspecial({Key? key, required this.nomeBotao1}) : super(key: key);
-
-  @override
-  State<BotaoEspecial> createState() => _BotaoEspecialState();
-}
-
-class _BotaoEspecialState extends State<BotaoEspecial> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          minimumSize: Size(300, 50),
-          primary: Colors.blue.shade700,
-          shape: StadiumBorder(),
-        ),
-        child: Text(
-          'cada',
-          style: TextStyle(
-            fontSize: 24,
-          ),
-        ),
-        //COMPORTAMENTO
-        onPressed: () {
-  
-        },
-      ),
-    );
-  }
-}
-
-
-
-
 
 class CxDialogo extends StatefulWidget {
-  final String labelCx;
-  const CxDialogo({Key? key, required this.labelCx}) : super(key: key);
+
+  const CxDialogo({Key? key,  }) : super(key: key);
 
   @override
   State<CxDialogo> createState() => _CxDialogoState();
 }
 
 class _CxDialogoState extends State<CxDialogo> {
+    
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Enviado'),
-      content: Text(
-        labelCX,
+      title: Text(
+        'Enviado',
+        textAlign: TextAlign.center,
         ),
+      content: Text(
+        'Sua duvida foi enviada com sucesso!.'
+        ' \n\n Obrogado.',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 18
+        ),
+      ),
+      actions: [
+        TextButton(onPressed: (){
+          Navigator.of(context).pop(); 
+        }, 
+        child: Text('fechar'),
+        ), 
+      ],  
     );
     
   }

@@ -66,7 +66,7 @@ class _TelaMinhaContaState extends State<TelaMinhaConta> {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
               Container(
-                padding: const EdgeInsets.all(2),
+                margin: const EdgeInsets.all(2),
                 color: Colors.white,
                 child: Image.asset(
                   'lib/images/homem.png',
