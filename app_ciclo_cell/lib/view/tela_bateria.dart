@@ -73,7 +73,7 @@ class _TelaBateriaState extends State<TelaBateria> {
                 'lib/images/reciclagem.png',
                 height: 150,                
               ),
-              SizedBox(height:20),
+              SizedBox(height:30),
               Botao(corBotao: Colors.white, nomeBotao: 'Iniciar teste'),
 
 

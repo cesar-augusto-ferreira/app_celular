@@ -72,6 +72,8 @@ class _TelaBateria2State extends State<TelaBateria2> {
                 'lib/images/reciclagem.png',
                 height: 150,                
               ),
+              SizedBox(height:30),
+                  Botao(corBotao: Colors.white, nomeBotao: 'Home'),
               
             ],
           ),

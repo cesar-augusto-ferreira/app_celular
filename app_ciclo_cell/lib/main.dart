@@ -18,7 +18,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaNuvem2(),
+      home: TelaBateria2(),
       debugShowCheckedModeBanner: false,
     ),
   );
