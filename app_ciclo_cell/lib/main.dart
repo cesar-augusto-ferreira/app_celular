@@ -15,7 +15,6 @@ import 'package:app_ciclo_cell/view/tela_performace.dart';
 import 'package:app_ciclo_cell/view/tela_performance2.dart';
 import 'package:app_ciclo_cell/view/tela_principal.dart';
 import 'package:app_ciclo_cell/view/tela_quem_somos.dart';
-import 'package:app_ciclo_cell/view/tela_recuperar_senha.dart';
 import 'package:flutter/material.dart';
 
 void main() {
