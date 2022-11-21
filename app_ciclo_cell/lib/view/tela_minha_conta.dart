@@ -93,9 +93,9 @@ class _TelaMinhaContaState extends State<TelaMinhaConta> {
                 const Botao(corBotao: Colors.white, nomeBotao: 'Voltar', acaoBotao: TelaPrincipal()),
                 const SizedBox(height: 25),
                 Row(
-                  children: [
-                    const SizedBox(width: 250),
-                    const Texto(label: 'CicloCell', tamFonte: 16),
+                  children: const [
+                    SizedBox(width: 250),
+                    Texto(label: 'CicloCell', tamFonte: 16),
                   ],
                 ),
                 
