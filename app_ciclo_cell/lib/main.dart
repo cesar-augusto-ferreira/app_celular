@@ -21,7 +21,7 @@ void main() {
   runApp(
     MaterialApp(
       title: 'CicloCell',
-      home: TelaMinhaConta(),
+      home: TelaLogin(),
       debugShowCheckedModeBanner: false,
     ),
   );

@@ -32,7 +32,7 @@ class _TelaLoginState extends State<TelaLogin> {
                   'lib/images/Logo_CicloCell.png',
                   height: 180,
                 ),
-                const SizedBox(height: 60,),
+                const SizedBox(height: 60),
                 const CampoTexto(label: 'Email', hintLabel: 'Digite seu ',
                   iconepref: Icons.person_outline,
                 ),
@@ -45,7 +45,7 @@ class _TelaLoginState extends State<TelaLogin> {
                   onPressed:(){},
                   child: Text(
                     'Recuperar senha',
-                    style: TextStyle(
+                    style: GoogleFonts.roboto(
                       color: Colors.red,
                       fontSize: 25,
                       decoration: TextDecoration.underline,
